@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Web Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <button class="navbar__button">Home</button>
+        <button class="navbar__button">Engineering</button>
+        <button class="navbar__button">Natural Sciences</button>
+        <button class="navbar__button">Economics</button>
+        <button class="navbar__button">Statistics</button>
+        <div class="search-bar">
+            <form>
+            <input type="text" placeholder="Search">
+            <button type="submit">
+            </button>
+        </form>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="column column1"></div>
+            <div class="column column2">
+                {% include "test.md" %}
+            </div>
+            <div class="column column3"></div>
+          </div>
+    </main>
+</body>
+
+</html>
